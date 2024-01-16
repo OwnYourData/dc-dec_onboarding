@@ -1,0 +1,4 @@
+./build.sh --dockerhub
+docker tag oydeu/dc-dec_onboarding:latest oydeu/dc-dec_onboarding:231130
+docker push oydeu/dc-dec_onboarding:231130
+nl set image deployment.v1.apps/wallet-onboarding wallet-onboarding=oydeu/dc-dec_onboarding:231130
